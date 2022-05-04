@@ -1,0 +1,110 @@
+{
+      "version": "2.0.0",
+      "tasks": [
+            {
+                  "label": "Run FDS in Background",
+                  "type": "shell",
+                  "command": "docker",
+                  "args": [
+                        "run",
+                        "--rm",
+                        "-d",
+                        "--name",
+                        "${fileBasenameNoExtension}",
+                        "-v",
+                        "${fileDirname}:/workdir",
+                        "${input:fdsVersion}",
+                        "bash",
+                        "-c",
+                        "mpiexec -n ${input:cores} fds ${fileBasename} 1> ${fileBasenameNoExtension}.log 2> ${fileBasenameNoExtension}.err"
+                  ],
+                  "presentation": {
+                        "reveal": "never",
+                        "panel": "shared"
+                  },
+                  "problemMatcher": []
+            },
+            {
+                  "label": "Run FDS in Terminal",
+                  "type": "shell",
+                  "command": "docker",
+                  "args": [
+                        "run",
+                        "--rm",
+                        "--name",
+                        "${fileBasenameNoExtension}",
+                        "-v",
+                        "${fileDirname}:/workdir",
+                        "${input:fdsVersion}",
+                        "mpiexec",
+                        "-n",
+                        "${input:cores}",
+                        "fds",
+                        "${fileBasename}"
+                  ],
+                  "presentation": {
+                        "panel": "shared"
+                  },
+                  "problemMatcher": []
+            },
+            {
+                  "label": "Stop FDS",
+                  "type": "shell",
+                  "command": "touch ${fileDirname}${pathSeparator}${fileBasenameNoExtension}.stop",
+                  "presentation": {
+                        "reveal": "never",
+                        "panel": "shared"
+                  },
+                  "problemMatcher": []
+            },
+            {
+                  "label": "Kill FDS",
+                  "type": "shell",
+                  "command": "docker kill ${fileBasenameNoExtension}",
+                  "presentation": {
+                        "reveal": "never",
+                        "panel": "shared"
+                  },
+                  "problemMatcher": []
+            },
+            {
+                  "label": "Reset FDS Folder",
+                  "type": "shell",
+                  "command": "find . -type f -not -name *.fds -not -name *.psm -not -name *.zip -exec rm -f {} +",
+                  "presentation": {
+                        "reveal": "never",
+                        "panel": "shared"
+                  },
+                  "options": {
+                        "cwd": "${fileDirname}"
+                  },
+                  "problemMatcher": []
+            }
+      ],
+      "inputs": [
+            {
+                  "id": "fdsVersion",
+                  "type": "pickString",
+                  "description": "FDS version",
+                  "options": [
+                        "openbcl/fds:latest",
+                        "openbcl/fds:6.7.7",
+                        "openbcl/fds:6.7.6",
+                        "openbcl/fds:6.7.5",
+                        "openbcl/fds:6.7.4",
+                        "openbcl/fds:6.7.3",
+                        "openbcl/fds:6.7.1",
+                        "openbcl/fds:6.5.3",
+                        "openbcl/fds:6.3.0",
+                        "openbcl/fds:6.2.0",
+                  ],
+                  "default": "openbcl/fds:latest",
+            },
+            {
+                  "id": "cores",
+                  "type": "promptString",
+                  "description": "Number of cores to use",
+                  "default": "1",
+            }
+      ]
+}

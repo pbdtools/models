@@ -1,0 +1,44 @@
+{
+    "editor.insertSpaces": true,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 6,
+    "editor.trimAutoWhitespace": true,
+    "explorer.compactFolders": false,
+    "files.eol": "\n",
+    "files.exclude": {
+        // FDS
+        "**/*.bf": true,
+        "**/*.binfo": true,
+        "**/*.end": true,
+        "**/*.iso": true,
+        "**/*.prt*": true,
+        "**/*.q*": true,
+        "**/*.restart": true,
+        "**/*.s3d": true,
+        "**/*.sf*": true,
+        "**/*.sinfo": true,
+        "**/*.ter": true,
+        "**/*.xyz": true,
+        // SMV
+        "**/*.svz": true,
+        "**/*.sz": true,
+        "**/*.szz": true,
+        // PyroSim
+        "**/*.pfr*": true,
+        "**/*.psm*": true,
+        "**/*.pyrogeom": true,
+        // Pathfinder
+        "**/*.geom*": true,
+        "**/*.octrmesh*": true,
+        "**/*.pfd": true,
+        "**/*.pfg": true,
+        "**/*.pth": true,
+        "**/*.snapshot": true,
+        // Other
+        "**/*.*~": true,
+        "**/*.zip": true,
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+}
