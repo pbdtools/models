@@ -88,6 +88,7 @@
                   "description": "FDS version",
                   "options": [
                         "openbcl/fds:latest",
+                        "openbcl/fds:6.7.8",
                         "openbcl/fds:6.7.7",
                         "openbcl/fds:6.7.6",
                         "openbcl/fds:6.7.5",
