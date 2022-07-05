@@ -1,0 +1,50 @@
+fds: 6.7.8
+
+{% macro obst(x0, y0, dx=1, dy=1, mult='') -%}
+&OBST XB= {{ x0 }}, {{ x0 + dx }}, {{ y0 }}, {{ y0 + dy }}, -1, 0,
+      {%+ if mult %}MULT_ID='{{ mult }}', {% endif %}SURF_ID='SOLID'/
+&OBST XB= {{ x0 }}, {{ x0 + dx }}, {{ y0 }}, {{ y0 + dy }}, {{ zmin }}, 0,
+      {%+ if mult %}MULT_ID='{{ mult }}', {% endif %}SURF_ID='OUTLINE', OUTLINE=.TRUE./
+{%- endmacro -%}
+
+&MESH XB=0, 27, 0, 11, {{ zmin }}, 0, IJK=27, 11, {{ zmin|abs }}/
+&TIME T_END=0/
+
+&SURF ID='SOLID', RGB=255, 69, 18/
+&SURF ID='OUTLINE', RGB=42, 42, 42/
+
+{% for bound in ['XMIN', 'XMAX', 'YMIN', 'YMAX', 'ZMIN', 'ZMAX']%}
+&VENT MB='{{ bound }}', SURF_ID='OPEN'/
+{% endfor %}
+
+# X
+&MULT ID='up', DXB=1, 1,  1,  1, 0, 0, N_UPPER=4/
+&MULT ID='dn', DXB=1, 1, -1, -1, 0, 0, N_UPPER=4/
+{{ obst(x0=0, y0=0, mult='up') }}
+{{ obst(x0=0, y0=4, mult='dn') }}
+
+# F
+{{ obst(x0=6, y0=4, dy=8) }}
+{{ obst(x0=7, y0=10, dx=4) }}
+{{ obst(x0=7, y0=7, dx=3) }}
+
+# D
+{{ obst(x0=12, y0=4, dy=8) }}
+{{ obst(x0=16, y0=6, dy=3) }}
+{{ obst(x0=13, y0=4, dx=2) }}
+{{ obst(x0=13, y0=10, dx=2) }}
+{{ obst(x0=15, y0=5) }}
+{{ obst(x0=15, y0=9) }}
+
+# S
+&MULT ID='bars', DY=3, J_UPPER=2/
+{{ obst(x0=19, y0=4, dx=3, mult='bars') }}
+{{ obst(x0=18, y0=8, dy=2) }}
+{{ obst(x0=22, y0=5, dy=2) }}
+{{ obst(x0=18, y0=5) }}
+{{ obst(x0=22, y0=9) }}
+
+# Arrow
+{{ obst(x0=6, y0=2, dx=21) }}
+{{ obst(x0=24, y0=0, dy=5) }}
+{{ obst(x0=25, y0=1, dy=3) }}

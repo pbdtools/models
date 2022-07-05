@@ -1,0 +1,4 @@
+models:
+  xfds_logo:
+    matrix:
+      zmin: [-2]

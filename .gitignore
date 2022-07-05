@@ -1,55 +1,55 @@
 ####################
 # General
 ####################
-*.zip
-*.*~*
+**/*.zip
+**/*.*~*
 
 ####################
 # BIM
 ####################
-*.dxf
-*.ifc*
-*.log
-*.rvt
+**/*.dxf
+**/*.ifc*
+**/*.log
+**/*.rvt
 
 ####################
 # FDS Files
 ####################
-*.bf*
-*.binfo
-*.end
-*.iso
-*.prt*
-*.q
-*.restart
-*.s3d*
-*.sf*
-*.sinfo
-*.ter
-*.xyz
+**/*.bf*
+**/*.binfo
+**/*.end
+**/*.iso
+**/*.prt*
+**/*.q
+**/*.restart
+**/*.s3d*
+**/*.sf*
+**/*.sinfo
+**/*.ter
+**/*.xyz
 
 ####################
 # SMV
 ####################
-*.svz
-*.sz
-*.szz
+**/*.svz
+**/*.sz
+**/*.szz
 
 ####################
 # PyroSim
 ####################
-*.pfr*
-*.psm
-*.psm.*
-*.pyrogeom
+**/*.pfr*
+**/*.psm
+**/*.psm.*
+**/*.pyrogeom
 
 ####################
 # Pathfinder
 ####################
-*.geom
-*.octrmesh
-*.pfd
-*.pfg
-*.pfr*
-*.pth
-*.snapshot
+**/*.geom
+**/*.octrmesh
+**/*.pfd
+**/*.pfg
+**/*.pfr*
+**/*.pth
+**/*.snapshot

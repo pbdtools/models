@@ -1,0 +1,103 @@
+fds: 6.7.8
+
+&MESH XB=0, 27, 0, 11, -2, 0, IJK=27, 11, 2/
+&TIME T_END=0/
+
+&SURF ID='SOLID', RGB=255, 69, 18/
+&SURF ID='OUTLINE', RGB=42, 42, 42/
+
+&VENT MB='XMIN', SURF_ID='OPEN'/
+&VENT MB='XMAX', SURF_ID='OPEN'/
+&VENT MB='YMIN', SURF_ID='OPEN'/
+&VENT MB='YMAX', SURF_ID='OPEN'/
+&VENT MB='ZMIN', SURF_ID='OPEN'/
+&VENT MB='ZMAX', SURF_ID='OPEN'/
+
+# X
+&MULT ID='up', DXB=1, 1,  1,  1, 0, 0, N_UPPER=4/
+&MULT ID='dn', DXB=1, 1, -1, -1, 0, 0, N_UPPER=4/
+&OBST XB= 0, 1, 0, 1, -1, 0,
+      MULT_ID='up', SURF_ID='SOLID'/
+&OBST XB= 0, 1, 0, 1, -2, 0,
+      MULT_ID='up', SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 0, 1, 4, 5, -1, 0,
+      MULT_ID='dn', SURF_ID='SOLID'/
+&OBST XB= 0, 1, 4, 5, -2, 0,
+      MULT_ID='dn', SURF_ID='OUTLINE', OUTLINE=.TRUE./
+
+# F
+&OBST XB= 6, 7, 4, 12, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 6, 7, 4, 12, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 7, 11, 10, 11, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 7, 11, 10, 11, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 7, 10, 7, 8, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 7, 10, 7, 8, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+
+# D
+&OBST XB= 12, 13, 4, 12, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 12, 13, 4, 12, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 16, 17, 6, 9, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 16, 17, 6, 9, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 13, 15, 4, 5, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 13, 15, 4, 5, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 13, 15, 10, 11, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 13, 15, 10, 11, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 15, 16, 5, 6, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 15, 16, 5, 6, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 15, 16, 9, 10, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 15, 16, 9, 10, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+
+# S
+&MULT ID='bars', DY=3, J_UPPER=2/
+&OBST XB= 19, 22, 4, 5, -1, 0,
+      MULT_ID='bars', SURF_ID='SOLID'/
+&OBST XB= 19, 22, 4, 5, -2, 0,
+      MULT_ID='bars', SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 18, 19, 8, 10, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 18, 19, 8, 10, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 22, 23, 5, 7, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 22, 23, 5, 7, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 18, 19, 5, 6, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 18, 19, 5, 6, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 22, 23, 9, 10, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 22, 23, 9, 10, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+
+# Arrow
+&OBST XB= 6, 27, 2, 3, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 6, 27, 2, 3, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 24, 25, 0, 5, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 24, 25, 0, 5, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
+&OBST XB= 25, 26, 1, 4, -1, 0,
+      SURF_ID='SOLID'/
+&OBST XB= 25, 26, 1, 4, -2, 0,
+      SURF_ID='OUTLINE', OUTLINE=.TRUE./
