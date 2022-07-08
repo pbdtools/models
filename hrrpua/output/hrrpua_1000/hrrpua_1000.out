@@ -1,0 +1,1050 @@
+
+ Fire Dynamics Simulator
+
+ Current Date     : July  8, 2022  14:06:30
+ Revision         : FDS6.7.8-0-gfbf3e11ee-release
+ Revision Date    : Tue May 24 18:07:45 2022 -0400
+ Compiler         : ifort version 2021.5.0
+ Compilation Date : May 25, 2022 06:01:34
+
+ MPI Enabled;    Number of MPI Processes:       1
+ OpenMP Disabled
+
+ MPI version: 3.1
+ MPI library version: Intel(R) MPI Library 2021.4 for Linux* OS
+
+
+ Job TITLE        : 
+ Job ID string    : hrrpua_1000
+
+
+ Grid Dimensions, Mesh     1
+
+   Cells in the X Direction            40
+   Cells in the Y Direction            40
+   Cells in the Z Direction            40
+   Number of Grid Cells             64000
+
+
+ Physical Dimensions, Mesh     1
+
+   Length (m)                       4.000
+   Width  (m)                       4.000
+   Height (m)                       4.000
+   Initial Time Step (s)            0.079
+
+ Total Number of Grid Cells         64000
+
+
+ Maximum Cell Aspect Ratio          1.000
+ CFL Velocity Norm                      2
+
+
+ Miscellaneous Parameters
+
+   Simulation Start Time (s)          0.0
+   Simulation End Time (s)           30.0
+   Background Pressure (Pa)     101325.00
+   Ambient Temperature (C)          20.00
+
+   3D Cartesian
+   VLES Calculation
+   Eddy Viscosity: Deardorff Model (C_DEARDORFF = 0.10)
+   Surface INERT Eddy Viscosity: WALE Model (C_WALE = 0.60)
+   Surface BURNER Eddy Viscosity: WALE Model (C_WALE = 0.60)
+   Turbulent Prandtl Number:         0.50
+   Turbulent Schmidt Number:         0.50
+
+
+ Background Stratification
+
+      Z (m)     P_0 (Pa)    TMP_0 (C)
+   ------------------------------------
+        3.95    101278.70     20.00
+        3.85    101279.87     20.00
+        3.75    101281.04     20.00
+        3.65    101282.21     20.00
+        3.55    101283.38     20.00
+        3.45    101284.56     20.00
+        3.35    101285.73     20.00
+        3.25    101286.90     20.00
+        3.15    101288.07     20.00
+        3.05    101289.24     20.00
+        2.95    101290.41     20.00
+        2.85    101291.59     20.00
+        2.75    101292.76     20.00
+        2.65    101293.93     20.00
+        2.55    101295.10     20.00
+        2.45    101296.27     20.00
+        2.35    101297.44     20.00
+        2.25    101298.62     20.00
+        2.15    101299.79     20.00
+        2.05    101300.96     20.00
+        1.95    101302.13     20.00
+        1.85    101303.30     20.00
+        1.75    101304.48     20.00
+        1.65    101305.65     20.00
+        1.55    101306.82     20.00
+        1.45    101307.99     20.00
+        1.35    101309.16     20.00
+        1.25    101310.34     20.00
+        1.15    101311.51     20.00
+        1.05    101312.68     20.00
+        0.95    101313.85     20.00
+        0.85    101315.02     20.00
+        0.75    101316.20     20.00
+        0.65    101317.37     20.00
+        0.55    101318.54     20.00
+        0.45    101319.71     20.00
+        0.35    101320.88     20.00
+        0.25    101322.06     20.00
+        0.15    101323.23     20.00
+        0.05    101324.40     20.00
+
+
+ Mass Fraction Transformation Matrix to Convert Species Mixtures (Columns) to Primitive Species (Rows)
+
+                         AIR       PROPANE   PRODUCTS
+   PROPANE               0.000000  1.000000  0.000000
+   NITROGEN              0.762470  0.000000  0.716833
+   OXYGEN                0.230997  0.000000  0.000000
+   CARBON DIOXIDE        0.000591  0.000000  0.179768
+   WATER VAPOR           0.005941  0.000000  0.103399
+   CARBON MONOXIDE       0.000000  0.000000  0.000000
+   SOOT                  0.000000  0.000000  0.000000
+   HYDROGEN              0.000000  0.000000  0.000000
+   HYDROGEN CYANIDE      0.000000  0.000000  0.000000
+
+
+ Primitive Species Information
+
+   PROPANE
+   Gas Species
+   Molecular Weight (g/mol)            44.09562
+   Ambient Density (kg/m^3)            1.833
+   Enthalpy of Formation (J/kg)       -2.37E+06
+
+   NITROGEN
+   Gas Species
+   Molecular Weight (g/mol)            28.01340
+   Ambient Density (kg/m^3)            1.165
+   Enthalpy of Formation (J/kg)        0.00E+00
+
+   OXYGEN
+   Gas Species
+   Molecular Weight (g/mol)            31.99880
+   Ambient Density (kg/m^3)            1.330
+   Enthalpy of Formation (J/kg)        0.00E+00
+
+   CARBON DIOXIDE
+   Gas Species
+   Molecular Weight (g/mol)            44.00950
+   Ambient Density (kg/m^3)            1.830
+   Enthalpy of Formation (J/kg)       -8.94E+06
+
+   WATER VAPOR
+   Gas Species
+   Molecular Weight (g/mol)            18.01528
+   Ambient Density (kg/m^3)            0.749
+   Enthalpy of Formation (J/kg)       -1.34E+07
+
+   CARBON MONOXIDE
+   Gas Species
+   Molecular Weight (g/mol)            28.01010
+   Ambient Density (kg/m^3)            1.164
+   Enthalpy of Formation (J/kg)       -3.95E+06
+
+   SOOT
+   Gas Species
+   Molecular Weight (g/mol)            10.91042
+   Ambient Density (kg/m^3)            0.454
+   Enthalpy of Formation (J/kg)        0.00E+00
+
+   HYDROGEN
+   Gas Species
+   Molecular Weight (g/mol)             2.01588
+   Ambient Density (kg/m^3)            0.084
+   Enthalpy of Formation (J/kg)        0.00E+00
+
+   HYDROGEN CYANIDE
+   Gas Species
+   Molecular Weight (g/mol)            27.02534
+   Ambient Density (kg/m^3)            1.123
+   Enthalpy of Formation (J/kg)        4.92E+06
+
+
+ Tracked (Lumped) Species Information
+
+   AIR
+   Molecular Weight (g/mol)            28.75198
+   Ambient Density (kg/m^3)            1.195
+   Initial Mass Fraction               1.000
+   Enthalpy of Formation (J/kg)     -8.50E+04
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.624699E-01      7.825727E-01
+   OXYGEN                         2.309974E-01      2.075588E-01
+   CARBON DIOXIDE                 5.914650E-04      3.864118E-04
+   WATER VAPOR                    5.941209E-03      9.482037E-03
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.80E-05
+                                  500 K:  2.61E-05
+                                 1000 K:  4.13E-05
+                                 1500 K:  5.37E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.56E-02
+                                  500 K:  3.81E-02
+                                 1000 K:  6.69E-02
+                                 1500 K:  9.25E-02
+        Enthalpy (J/kg) Ambient,  293 K: -9.01E+04
+                                  500 K:  1.22E+05
+                                 1000 K:  6.72E+05
+                                 1500 K:  1.27E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.02E+03
+                                  500 K:  1.04E+03
+                                 1000 K:  1.16E+03
+                                 1500 K:  1.23E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.99E-05
+                                  500 K:  4.96E-05
+                                 1000 K:  1.58E-04
+                                 1500 K:  3.09E-04
+
+   PROPANE
+   Molecular Weight (g/mol)            44.09562
+   Ambient Density (kg/m^3)            1.833
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -2.37E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   PROPANE                        1.000000E+00      1.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  8.08E-06
+                                  500 K:  1.31E-05
+                                 1000 K:  2.23E-05
+                                 1500 K:  2.96E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  1.66E-02
+                                  500 K:  4.18E-02
+                                 1000 K:  1.11E-01
+                                 1500 K:  1.72E-01
+        Enthalpy (J/kg) Ambient,  293 K: -2.38E+06
+                                  500 K: -1.95E+06
+                                 1000 K: -2.77E+05
+                                 1500 K:  1.90E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.65E+03
+                                  500 K:  2.55E+03
+                                 1000 K:  3.96E+03
+                                 1500 K:  4.67E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.11E-05
+                                  500 K:  2.86E-05
+                                 1000 K:  9.32E-05
+                                 1500 K:  1.83E-04
+
+   PRODUCTS
+   Molecular Weight (g/mol)            28.23805
+   Ambient Density (kg/m^3)            1.174
+   Initial Mass Fraction               0.000
+   Enthalpy of Formation (J/kg)     -3.00E+06
+
+   Sub Species                    Mass Fraction     Mole Fraction
+   NITROGEN                       7.168330E-01      7.225815E-01
+   CARBON DIOXIDE                 1.797677E-01      1.153453E-01
+   WATER VAPOR                    1.033993E-01      1.620732E-01
+   CARBON MONOXIDE                0.000000E+00      0.000000E+00
+   SOOT                           0.000000E+00      0.000000E+00
+   HYDROGEN CYANIDE               0.000000E+00      0.000000E+00
+ 
+     Viscosity (kg/m/s) Ambient,  293 K:  1.61E-05
+                                  500 K:  2.39E-05
+                                 1000 K:  3.90E-05
+                                 1500 K:  5.15E-05
+   Therm. Cond. (W/m/K) Ambient,  293 K:  2.34E-02
+                                  500 K:  3.62E-02
+                                 1000 K:  6.71E-02
+                                 1500 K:  9.62E-02
+        Enthalpy (J/kg) Ambient,  293 K: -3.00E+06
+                                  500 K: -2.77E+06
+                                 1000 K: -2.16E+06
+                                 1500 K: -1.48E+06
+    Spec. Heat (J/kg/K) Ambient,  293 K:  1.09E+03
+                                  500 K:  1.14E+03
+                                 1000 K:  1.30E+03
+                                 1500 K:  1.40E+03
+   Diff. Coeff. (m^2/s) Ambient,  293 K:  1.95E-05
+                                  500 K:  4.95E-05
+                                 1000 K:  1.60E-04
+                                 1500 K:  3.14E-04
+
+
+ Gas Phase Reaction Information
+
+      Fuel                                           Heat of Combustion (kJ/kg)
+      PROPANE                                                        46334.6246
+
+      Primitive Species Stoich. Coeff.
+      Species ID                                                          Molar
+      PROPANE                                                         -1.000000
+      NITROGEN                                                        -0.000000
+      OXYGEN                                                          -5.000000
+      CARBON DIOXIDE                                                   3.000000
+      WATER VAPOR                                                      4.000000
+
+      Tracked (Lumped) Species Stoich. Coeff.
+      Species ID                                             Molar         Mass
+      AIR                                               -24.089557   -15.707286
+      PROPANE                                            -1.000000    -1.000000
+      PRODUCTS                                           26.089557    16.707286
+
+      Reaction Kinetics
+
+      Fast chemistry
+
+      ODE Solver:  EXPLICIT EULER
+      Extinction Model:  EXTINCTION 2
+      Auto-Ignition Temperature (K):       0.0
+      Critical Flame Temperature (K):   1720.2
+
+      Prescribed Radiative Fraction:     0.290
+
+
+ Material Information
+
+
+ Surface Conditions
+
+   0 INERT (DEFAULT)
+
+   1 BURNER
+     HRR Per Unit Area (kW/m2)        666.7
+     PROPANE Mass Flux (kg/s/m2)   1.44E-02
+
+   2 OPEN
+     Passive Vent to Atmosphere
+
+   3 MIRROR
+     Symmetry Plane
+
+   4 INTERPOLATED
+
+   5 PERIODIC
+
+   6 HVAC
+
+   7 MASSLESS TRACER
+
+   8 DROPLET
+
+   9 MASSLESS TARGET
+
+  10 PERIODIC FLOW ONLY
+
+
+ Lagrangian Particle Classes
+
+
+ Cut-off Density and Temperature
+
+    Minimum Temperature:   -10.0 C
+    Maximum Temperature:  2726.8 C
+    Minimum Density:  1.195E-01 kg/m3
+    Maximum Density:  4.084E+00 kg/m3
+
+
+ Radiation Model Information
+
+   Number of control angles  104
+   Time step increment         3
+   Angle increment             5
+   Theta band N_phi   Solid angle
+     1:        4     0.120
+     2:       12     0.114
+     3:       16     0.127
+     4:       20     0.120
+     5:       20     0.120
+     6:       16     0.127
+     7:       12     0.114
+     8:        4     0.120
+   Using gray gas absorption.
+   Mean beam length  1.000E-01 m
+ 
+ 
+
+ Run Time Diagnostics
+
+       Time Step       1   July  8, 2022  14:06:31
+       Step Size:    0.791E-01 s, Total Time:       0.08 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.14E-02 on Mesh 1 at (24,15,2)
+       Maximum Pressure Error:  0.25E-05 on Mesh 1 at (22,21,4)
+       ---------------------------------------------------------------
+       Max CFL number:  0.21E-01 at (24,26,19)
+       Max divergence: -0.13E-04 at (29,12,2)
+       Min divergence: -0.32E-02 at (23,17,3)
+       Max VN number:   0.28E-01 at (23,17,3)
+ 
+       Time Step       2   July  8, 2022  14:06:31
+       Step Size:    0.791E-01 s, Total Time:       0.16 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.42E-01 on Mesh 1 at (26,19,2)
+       Maximum Pressure Error:  0.13E+00 on Mesh 1 at (20,20,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.20E-01 at (24,26,19)
+       Max divergence:  0.11E+01 at (20,22,3)
+       Min divergence: -0.22E-02 at (15,20,39)
+       Max VN number:   0.28E-01 at (23,17,3)
+       Total Heat Release Rate:             48.314 kW
+ 
+       Time Step       3   July  8, 2022  14:06:31
+       Step Size:    0.791E-01 s, Total Time:       0.24 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.37E-01 on Mesh 1 at (26,26,2)
+       Maximum Pressure Error:  0.34E+02 on Mesh 1 at (20,19,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.16E+00 at (15,22,3)
+       Max divergence:  0.55E+00 at (22,21,3)
+       Min divergence: -0.17E-01 at (26,26,3)
+       Max VN number:   0.29E-01 at (24,40,16)
+       Total Heat Release Rate:              9.681 kW
+       Radiation Loss to Boundaries:        -1.138 kW
+ 
+       Time Step       4   July  8, 2022  14:06:31
+       Step Size:    0.791E-01 s, Total Time:       0.32 s
+       Pressure Iterations: 4
+       Maximum Velocity Error:  0.36E-01 on Mesh 1 at (21,26,1)
+       Maximum Pressure Error:  0.23E+03 on Mesh 1 at (20,22,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E-01 at (20,22,3)
+       Max divergence:  0.10E+02 at (22,17,3)
+       Min divergence: -0.15E-01 at (15,20,39)
+       Max VN number:   0.91E-01 at (15,22,3)
+       Total Heat Release Rate:            343.560 kW
+       Radiation Loss to Boundaries:        -4.113 kW
+ 
+       Time Step       5   July  8, 2022  14:06:31
+       Step Size:    0.677E-01 s, Total Time:       0.38 s
+       Pressure Iterations: 6
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (21,26,1)
+       Maximum Pressure Error:  0.18E+04 on Mesh 1 at (22,17,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.95E+00 at (22,25,3)
+       Max divergence:  0.30E+01 at (15,26,3)
+       Min divergence: -0.15E-01 at (22,17,5)
+       Max VN number:   0.37E+00 at (22,17,3)
+       Total Heat Release Rate:            240.818 kW
+       Radiation Loss to Boundaries:       -61.356 kW
+ 
+       Time Step       6   July  8, 2022  14:06:31
+       Step Size:    0.677E-01 s, Total Time:       0.45 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.49E-01 on Mesh 1 at (26,19,2)
+       Maximum Pressure Error:  0.57E+03 on Mesh 1 at (15,20,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.33E+00 at (25,25,3)
+       Max divergence:  0.92E+01 at (26,19,3)
+       Min divergence: -0.14E-01 at (24,25,5)
+       Max VN number:   0.79E-01 at (26,26,3)
+       Total Heat Release Rate:            427.196 kW
+       Radiation Loss to Boundaries:      -142.994 kW
+ 
+       Time Step       7   July  8, 2022  14:06:31
+       Step Size:    0.744E-01 s, Total Time:       0.53 s
+       Pressure Iterations: 8
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (26,20,2)
+       Maximum Pressure Error:  0.18E+04 on Mesh 1 at (26,19,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.73E+00 at (15,20,3)
+       Max divergence:  0.29E+01 at (26,26,3)
+       Min divergence: -0.11E+02 at (15,20,3)
+       Max VN number:   0.42E+00 at (26,19,3)
+       Total Heat Release Rate:            312.014 kW
+       Radiation Loss to Boundaries:      -490.527 kW
+ 
+       Time Step       8   July  8, 2022  14:06:32
+       Step Size:    0.370E-01 s, Total Time:       0.56 s
+       Pressure Iterations: 7
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (21,26,1)
+       Maximum Pressure Error:  0.13E+04 on Mesh 1 at (20,21,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.88E+00 at (20,26,3)
+       Max divergence:  0.76E+01 at (15,20,3)
+       Min divergence: -0.12E-01 at (40,1,40)
+       Max VN number:   0.10E+00 at (20,27,3)
+       Total Heat Release Rate:            445.758 kW
+       Radiation Loss to Boundaries:      -139.845 kW
+ 
+       Time Step       9   July  8, 2022  14:06:32
+       Step Size:    0.370E-01 s, Total Time:       0.60 s
+       Pressure Iterations: 6
+       Maximum Velocity Error:  0.35E-01 on Mesh 1 at (21,26,1)
+       Maximum Pressure Error:  0.14E+04 on Mesh 1 at (21,26,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.50E+00 at (15,20,3)
+       Max divergence:  0.30E+01 at (23,26,3)
+       Min divergence: -0.10E+00 at (25,25,3)
+       Max VN number:   0.73E-01 at (25,20,3)
+       Total Heat Release Rate:            424.361 kW
+       Radiation Loss to Boundaries:      -246.755 kW
+ 
+       Time Step      10   July  8, 2022  14:06:32
+       Step Size:    0.407E-01 s, Total Time:       0.64 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (26,21,2)
+       Maximum Pressure Error:  0.57E+03 on Mesh 1 at (21,26,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.40E+00 at (26,26,3)
+       Max divergence:  0.54E+01 at (20,15,3)
+       Min divergence: -0.11E-01 at (40,1,40)
+       Max VN number:   0.86E-01 at (26,19,3)
+       Total Heat Release Rate:            501.678 kW
+       Radiation Loss to Boundaries:      -226.877 kW
+ 
+       Time Step      20   July  8, 2022  14:06:33
+       Step Size:    0.328E-01 s, Total Time:       1.06 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.20E-01 on Mesh 1 at (15,21,2)
+       Maximum Pressure Error:  0.46E+03 on Mesh 1 at (18,23,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.96E+00 at (24,24,4)
+       Max divergence:  0.62E+01 at (17,25,3)
+       Min divergence: -0.21E+01 at (23,18,3)
+       Max VN number:   0.16E+00 at (16,25,4)
+       Total Heat Release Rate:            538.441 kW
+       Radiation Loss to Boundaries:      -153.039 kW
+ 
+       Time Step      30   July  8, 2022  14:06:34
+       Step Size:    0.201E-01 s, Total Time:       1.31 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (21,23,2)
+       Maximum Pressure Error:  0.36E+03 on Mesh 1 at (18,19,10)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (19,18,6)
+       Max divergence:  0.90E+01 at (22,21,7)
+       Min divergence: -0.25E+01 at (23,18,3)
+       Max VN number:   0.31E+00 at (18,19,9)
+       Total Heat Release Rate:            926.216 kW
+       Radiation Loss to Boundaries:      -257.092 kW
+ 
+       Time Step      40   July  8, 2022  14:06:35
+       Step Size:    0.157E-01 s, Total Time:       1.48 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.15E-01 on Mesh 1 at (26,21,2)
+       Maximum Pressure Error:  0.56E+03 on Mesh 1 at (21,19,8)
+       ---------------------------------------------------------------
+       Max CFL number:  0.95E+00 at (18,23,9)
+       Max divergence:  0.12E+02 at (22,21,8)
+       Min divergence: -0.25E+01 at (16,21,10)
+       Max VN number:   0.31E+00 at (22,19,8)
+       Total Heat Release Rate:            913.042 kW
+       Radiation Loss to Boundaries:      -210.328 kW
+ 
+       Time Step      50   July  8, 2022  14:06:37
+       Step Size:    0.123E-01 s, Total Time:       1.61 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.92E-02 on Mesh 1 at (26,23,2)
+       Maximum Pressure Error:  0.46E+03 on Mesh 1 at (18,17,14)
+       ---------------------------------------------------------------
+       Max CFL number:  0.97E+00 at (18,18,11)
+       Max divergence:  0.99E+01 at (21,20,10)
+       Min divergence: -0.31E+01 at (17,18,15)
+       Max VN number:   0.34E+00 at (21,19,11)
+       Total Heat Release Rate:            956.644 kW
+       Radiation Loss to Boundaries:      -229.448 kW
+ 
+       Time Step      60   July  8, 2022  14:06:38
+       Step Size:    0.106E-01 s, Total Time:       1.71 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.46E-01 on Mesh 1 at (20,22,2)
+       Maximum Pressure Error:  0.42E+03 on Mesh 1 at (22,18,13)
+       ---------------------------------------------------------------
+       Max CFL number:  0.92E+00 at (19,23,13)
+       Max divergence:  0.72E+01 at (23,16,3)
+       Min divergence: -0.34E+01 at (22,22,5)
+       Max VN number:   0.29E+00 at (18,20,12)
+       Total Heat Release Rate:            891.493 kW
+       Radiation Loss to Boundaries:      -213.907 kW
+ 
+       Time Step      70   July  8, 2022  14:06:39
+       Step Size:    0.845E-02 s, Total Time:       1.81 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (21,19,2)
+       Maximum Pressure Error:  0.70E+03 on Mesh 1 at (20,22,10)
+       ---------------------------------------------------------------
+       Max CFL number:  0.79E+00 at (22,19,13)
+       Max divergence:  0.13E+02 at (20,22,13)
+       Min divergence: -0.33E+01 at (19,19,6)
+       Max VN number:   0.27E+00 at (20,22,13)
+       Total Heat Release Rate:           1090.796 kW
+       Radiation Loss to Boundaries:      -259.255 kW
+ 
+       Time Step      80   July  8, 2022  14:06:41
+       Step Size:    0.821E-02 s, Total Time:       1.89 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.42E-01 on Mesh 1 at (15,20,2)
+       Maximum Pressure Error:  0.10E+04 on Mesh 1 at (19,21,16)
+       ---------------------------------------------------------------
+       Max CFL number:  0.98E+00 at (21,20,14)
+       Max divergence:  0.12E+02 at (20,20,15)
+       Min divergence: -0.36E+01 at (23,21,16)
+       Max VN number:   0.28E+00 at (20,20,14)
+       Total Heat Release Rate:           1135.326 kW
+       Radiation Loss to Boundaries:      -277.289 kW
+ 
+       Time Step      90   July  8, 2022  14:06:43
+       Step Size:    0.767E-02 s, Total Time:       1.96 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (15,20,2)
+       Maximum Pressure Error:  0.12E+04 on Mesh 1 at (21,21,17)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (21,21,17)
+       Max divergence:  0.83E+01 at (20,19,7)
+       Min divergence: -0.63E+01 at (21,21,17)
+       Max VN number:   0.31E+00 at (21,21,17)
+       Total Heat Release Rate:            943.983 kW
+       Radiation Loss to Boundaries:      -224.239 kW
+ 
+       Time Step     100   July  8, 2022  14:06:44
+       Step Size:    0.767E-02 s, Total Time:       2.04 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.92E-02 on Mesh 1 at (23,18,2)
+       Maximum Pressure Error:  0.16E+04 on Mesh 1 at (21,22,20)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (20,21,16)
+       Max divergence:  0.83E+01 at (21,22,8)
+       Min divergence: -0.58E+01 at (21,21,21)
+       Max VN number:   0.33E+00 at (21,21,20)
+       Total Heat Release Rate:            845.895 kW
+       Radiation Loss to Boundaries:      -200.552 kW
+ 
+       Time Step     200   July  8, 2022  14:06:58
+       Step Size:    0.541E-02 s, Total Time:       2.68 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.68E-02 on Mesh 1 at (23,18,2)
+       Maximum Pressure Error:  0.19E+04 on Mesh 1 at (21,19,28)
+       ---------------------------------------------------------------
+       Max CFL number:  0.84E+00 at (21,19,28)
+       Max divergence:  0.70E+01 at (21,16,3)
+       Min divergence: -0.42E+01 at (23,19,12)
+       Max VN number:   0.26E+00 at (21,18,38)
+       Total Heat Release Rate:            908.403 kW
+       Radiation Loss to Boundaries:      -223.038 kW
+ 
+       Time Step     300   July  8, 2022  14:07:11
+       Step Size:    0.547E-02 s, Total Time:       3.27 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.71E-02 on Mesh 1 at (20,19,2)
+       Maximum Pressure Error:  0.11E+04 on Mesh 1 at (20,22,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (20,22,29)
+       Max divergence:  0.68E+01 at (17,18,4)
+       Min divergence: -0.50E+01 at (19,24,30)
+       Max VN number:   0.38E+00 at (37,3,40)
+       Total Heat Release Rate:           1099.331 kW
+       Radiation Loss to Boundaries:      -268.515 kW
+ 
+       Time Step     400   July  8, 2022  14:07:24
+       Step Size:    0.716E-02 s, Total Time:       3.89 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (20,15,2)
+       Maximum Pressure Error:  0.13E+04 on Mesh 1 at (10,22,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (9,22,40)
+       Max divergence:  0.10E+02 at (19,17,3)
+       Min divergence: -0.39E+01 at (20,18,21)
+       Max VN number:   0.73E+00 at (9,21,40)
+       Total Heat Release Rate:           1009.272 kW
+       Radiation Loss to Boundaries:      -266.385 kW
+ 
+       Time Step     500   July  8, 2022  14:07:37
+       Step Size:    0.759E-02 s, Total Time:       4.60 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.30E-01 on Mesh 1 at (23,20,2)
+       Maximum Pressure Error:  0.75E+03 on Mesh 1 at (21,19,21)
+       ---------------------------------------------------------------
+       Max CFL number:  0.82E+00 at (23,21,31)
+       Max divergence:  0.95E+01 at (25,22,3)
+       Min divergence: -0.29E+01 at (19,25,13)
+       Max VN number:   0.62E+00 at (3,1,33)
+       Total Heat Release Rate:            991.023 kW
+       Radiation Loss to Boundaries:      -256.568 kW
+ 
+       Time Step     600   July  8, 2022  14:07:52
+       Step Size:    0.733E-02 s, Total Time:       5.31 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (23,24,2)
+       Maximum Pressure Error:  0.74E+03 on Mesh 1 at (19,19,21)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (19,19,19)
+       Max divergence:  0.11E+02 at (22,17,3)
+       Min divergence: -0.39E+01 at (19,20,4)
+       Max VN number:   0.49E+00 at (14,18,40)
+       Total Heat Release Rate:           1025.949 kW
+       Radiation Loss to Boundaries:      -268.454 kW
+ 
+       Time Step     700   July  8, 2022  14:08:07
+       Step Size:    0.821E-02 s, Total Time:       5.99 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (26,19,2)
+       Maximum Pressure Error:  0.13E+04 on Mesh 1 at (20,22,18)
+       ---------------------------------------------------------------
+       Max CFL number:  0.85E+00 at (22,16,40)
+       Max divergence:  0.86E+01 at (26,19,3)
+       Min divergence: -0.30E+01 at (20,22,17)
+       Max VN number:   0.50E+00 at (28,22,40)
+       Total Heat Release Rate:           1016.455 kW
+       Radiation Loss to Boundaries:      -264.622 kW
+ 
+       Time Step     800   July  8, 2022  14:08:20
+       Step Size:    0.775E-02 s, Total Time:       6.71 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.13E-01 on Mesh 1 at (22,24,2)
+       Maximum Pressure Error:  0.61E+03 on Mesh 1 at (15,21,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.83E+00 at (20,20,35)
+       Max divergence:  0.10E+02 at (24,20,3)
+       Min divergence: -0.34E+01 at (18,18,3)
+       Max VN number:   0.53E+00 at (40,3,33)
+       Total Heat Release Rate:            960.538 kW
+       Radiation Loss to Boundaries:      -273.288 kW
+ 
+       Time Step     900   July  8, 2022  14:08:33
+       Step Size:    0.811E-02 s, Total Time:       7.48 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.24E-01 on Mesh 1 at (20,19,2)
+       Maximum Pressure Error:  0.61E+03 on Mesh 1 at (18,22,34)
+       ---------------------------------------------------------------
+       Max CFL number:  0.92E+00 at (17,22,27)
+       Max divergence:  0.84E+01 at (16,19,3)
+       Min divergence: -0.37E+01 at (20,19,13)
+       Max VN number:   0.53E+00 at (21,2,40)
+       Total Heat Release Rate:            898.171 kW
+       Radiation Loss to Boundaries:      -245.161 kW
+ 
+       Time Step    1000   July  8, 2022  14:08:48
+       Step Size:    0.831E-02 s, Total Time:       8.27 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.22E-01 on Mesh 1 at (21,20,2)
+       Maximum Pressure Error:  0.47E+03 on Mesh 1 at (20,24,19)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (17,20,35)
+       Max divergence:  0.87E+01 at (21,18,3)
+       Min divergence: -0.32E+01 at (20,17,23)
+       Max VN number:   0.40E+00 at (1,4,29)
+       Total Heat Release Rate:            972.461 kW
+       Radiation Loss to Boundaries:      -254.553 kW
+ 
+       Time Step    1100   July  8, 2022  14:09:01
+       Step Size:    0.802E-02 s, Total Time:       9.02 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.11E-01 on Mesh 1 at (23,18,2)
+       Maximum Pressure Error:  0.57E+03 on Mesh 1 at (33,19,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (16,20,29)
+       Max divergence:  0.91E+01 at (21,17,3)
+       Min divergence: -0.37E+01 at (21,21,20)
+       Max VN number:   0.45E+00 at (37,40,33)
+       Total Heat Release Rate:           1005.589 kW
+       Radiation Loss to Boundaries:      -267.408 kW
+ 
+       Time Step    1200   July  8, 2022  14:09:17
+       Step Size:    0.802E-02 s, Total Time:       9.83 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (19,19,2)
+       Maximum Pressure Error:  0.39E+03 on Mesh 1 at (17,21,34)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (19,23,27)
+       Max divergence:  0.96E+01 at (24,22,3)
+       Min divergence: -0.28E+01 at (20,25,15)
+       Max VN number:   0.45E+00 at (37,40,27)
+       Total Heat Release Rate:            966.260 kW
+       Radiation Loss to Boundaries:      -274.315 kW
+ 
+       Time Step    1300   July  8, 2022  14:09:30
+       Step Size:    0.920E-02 s, Total Time:      10.67 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.20E-01 on Mesh 1 at (18,15,2)
+       Maximum Pressure Error:  0.31E+03 on Mesh 1 at (21,21,10)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (16,21,21)
+       Max divergence:  0.78E+01 at (20,21,10)
+       Min divergence: -0.28E+01 at (23,23,10)
+       Max VN number:   0.45E+00 at (22,21,40)
+       Total Heat Release Rate:            968.134 kW
+       Radiation Loss to Boundaries:      -273.054 kW
+ 
+       Time Step    1400   July  8, 2022  14:09:43
+       Step Size:    0.863E-02 s, Total Time:      11.50 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.13E-01 on Mesh 1 at (21,26,2)
+       Maximum Pressure Error:  0.45E+03 on Mesh 1 at (17,20,30)
+       ---------------------------------------------------------------
+       Max CFL number:  0.94E+00 at (17,20,29)
+       Max divergence:  0.91E+01 at (17,19,3)
+       Min divergence: -0.31E+01 at (22,21,4)
+       Max VN number:   0.43E+00 at (17,24,40)
+       Total Heat Release Rate:           1022.898 kW
+       Radiation Loss to Boundaries:      -301.340 kW
+ 
+       Time Step    1500   July  8, 2022  14:09:58
+       Step Size:    0.887E-02 s, Total Time:      12.34 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.18E-01 on Mesh 1 at (23,24,2)
+       Maximum Pressure Error:  0.42E+03 on Mesh 1 at (20,21,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.94E+00 at (21,20,20)
+       Max divergence:  0.83E+01 at (18,23,3)
+       Min divergence: -0.33E+01 at (19,18,28)
+       Max VN number:   0.53E+00 at (21,39,40)
+       Total Heat Release Rate:           1007.786 kW
+       Radiation Loss to Boundaries:      -292.405 kW
+ 
+       Time Step    1600   July  8, 2022  14:10:12
+       Step Size:    0.956E-02 s, Total Time:      13.25 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (21,20,2)
+       Maximum Pressure Error:  0.54E+03 on Mesh 1 at (35,1,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.82E+00 at (24,24,26)
+       Max divergence:  0.79E+01 at (22,25,3)
+       Min divergence: -0.22E+01 at (19,23,3)
+       Max VN number:   0.45E+00 at (16,39,40)
+       Total Heat Release Rate:            971.359 kW
+       Radiation Loss to Boundaries:      -305.878 kW
+ 
+       Time Step    1700   July  8, 2022  14:10:28
+       Step Size:    0.988E-02 s, Total Time:      14.19 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.87E-02 on Mesh 1 at (24,18,2)
+       Maximum Pressure Error:  0.47E+03 on Mesh 1 at (21,18,18)
+       ---------------------------------------------------------------
+       Max CFL number:  0.92E+00 at (20,20,28)
+       Max divergence:  0.76E+01 at (16,20,3)
+       Min divergence: -0.32E+01 at (25,19,18)
+       Max VN number:   0.40E+00 at (1,3,28)
+       Total Heat Release Rate:           1009.519 kW
+       Radiation Loss to Boundaries:      -301.700 kW
+ 
+       Time Step    1800   July  8, 2022  14:10:42
+       Step Size:    0.935E-02 s, Total Time:      15.14 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (19,21,2)
+       Maximum Pressure Error:  0.32E+03 on Mesh 1 at (22,21,22)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (22,21,25)
+       Max divergence:  0.67E+01 at (20,18,3)
+       Min divergence: -0.22E+01 at (20,19,5)
+       Max VN number:   0.43E+00 at (39,25,40)
+       Total Heat Release Rate:            914.230 kW
+       Radiation Loss to Boundaries:      -296.610 kW
+ 
+       Time Step    1900   July  8, 2022  14:10:56
+       Step Size:    0.935E-02 s, Total Time:      16.07 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.11E-01 on Mesh 1 at (24,20,2)
+       Maximum Pressure Error:  0.41E+03 on Mesh 1 at (21,19,15)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (22,22,27)
+       Max divergence:  0.69E+01 at (24,22,3)
+       Min divergence: -0.28E+01 at (25,17,17)
+       Max VN number:   0.52E+00 at (15,2,40)
+       Total Heat Release Rate:           1035.121 kW
+       Radiation Loss to Boundaries:      -321.194 kW
+ 
+       Time Step    2000   July  8, 2022  14:11:10
+       Step Size:    0.834E-02 s, Total Time:      16.99 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.17E-01 on Mesh 1 at (21,24,2)
+       Maximum Pressure Error:  0.31E+03 on Mesh 1 at (21,17,32)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (21,17,31)
+       Max divergence:  0.83E+01 at (17,23,3)
+       Min divergence: -0.27E+01 at (20,19,12)
+       Max VN number:   0.42E+00 at (40,37,27)
+       Total Heat Release Rate:            926.862 kW
+       Radiation Loss to Boundaries:      -308.581 kW
+ 
+       Time Step    2100   July  8, 2022  14:11:27
+       Step Size:    0.985E-02 s, Total Time:      17.93 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (20,25,2)
+       Maximum Pressure Error:  0.35E+03 on Mesh 1 at (20,20,21)
+       ---------------------------------------------------------------
+       Max CFL number:  0.92E+00 at (20,20,21)
+       Max divergence:  0.72E+01 at (21,23,3)
+       Min divergence: -0.22E+01 at (21,22,19)
+       Max VN number:   0.46E+00 at (11,1,21)
+       Total Heat Release Rate:            911.915 kW
+       Radiation Loss to Boundaries:      -321.208 kW
+ 
+       Time Step    2200   July  8, 2022  14:11:42
+       Step Size:    0.999E-02 s, Total Time:      18.85 s
+       Pressure Iterations: 3
+       Maximum Velocity Error:  0.33E-01 on Mesh 1 at (20,24,2)
+       Maximum Pressure Error:  0.90E+03 on Mesh 1 at (20,24,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (22,18,31)
+       Max divergence:  0.78E+01 at (19,16,3)
+       Min divergence: -0.20E+01 at (18,19,3)
+       Max VN number:   0.48E+00 at (24,39,40)
+       Total Heat Release Rate:            976.932 kW
+       Radiation Loss to Boundaries:      -354.133 kW
+ 
+       Time Step    2300   July  8, 2022  14:11:58
+       Step Size:    0.102E-01 s, Total Time:      19.85 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.40E-01 on Mesh 1 at (24,23,2)
+       Maximum Pressure Error:  0.30E+03 on Mesh 1 at (19,19,18)
+       ---------------------------------------------------------------
+       Max CFL number:  0.90E+00 at (20,20,21)
+       Max divergence:  0.83E+01 at (25,23,3)
+       Min divergence: -0.23E+01 at (21,18,3)
+       Max VN number:   0.46E+00 at (23,3,40)
+       Total Heat Release Rate:            919.046 kW
+       Radiation Loss to Boundaries:      -341.701 kW
+ 
+       Time Step    2400   July  8, 2022  14:12:12
+       Step Size:    0.903E-02 s, Total Time:      20.85 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.25E-01 on Mesh 1 at (21,21,2)
+       Maximum Pressure Error:  0.39E+03 on Mesh 1 at (31,21,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.89E+00 at (20,16,33)
+       Max divergence:  0.83E+01 at (23,22,3)
+       Min divergence: -0.18E+01 at (18,21,10)
+       Max VN number:   0.42E+00 at (21,15,40)
+       Total Heat Release Rate:            996.145 kW
+       Radiation Loss to Boundaries:      -384.811 kW
+ 
+       Time Step    2500   July  8, 2022  14:12:26
+       Step Size:    0.940E-02 s, Total Time:      21.74 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.85E-02 on Mesh 1 at (21,25,2)
+       Maximum Pressure Error:  0.67E+03 on Mesh 1 at (21,21,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.85E+00 at (22,21,29)
+       Max divergence:  0.70E+01 at (21,18,3)
+       Min divergence: -0.25E+01 at (22,21,3)
+       Max VN number:   0.50E+00 at (20,29,40)
+       Total Heat Release Rate:            965.965 kW
+       Radiation Loss to Boundaries:      -377.838 kW
+ 
+       Time Step    2600   July  8, 2022  14:12:40
+       Step Size:    0.990E-02 s, Total Time:      22.71 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.26E-01 on Mesh 1 at (20,26,2)
+       Maximum Pressure Error:  0.43E+03 on Mesh 1 at (23,22,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (20,21,23)
+       Max divergence:  0.86E+01 at (20,26,3)
+       Min divergence: -0.19E+01 at (22,19,3)
+       Max VN number:   0.44E+00 at (37,40,27)
+       Total Heat Release Rate:           1007.053 kW
+       Radiation Loss to Boundaries:      -392.876 kW
+ 
+       Time Step    2700   July  8, 2022  14:12:55
+       Step Size:    0.992E-02 s, Total Time:      23.65 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.14E-01 on Mesh 1 at (21,21,2)
+       Maximum Pressure Error:  0.32E+03 on Mesh 1 at (22,26,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.96E+00 at (20,23,13)
+       Max divergence:  0.66E+01 at (20,24,3)
+       Min divergence: -0.24E+01 at (21,21,19)
+       Max VN number:   0.48E+00 at (1,36,32)
+       Total Heat Release Rate:           1020.535 kW
+       Radiation Loss to Boundaries:      -407.131 kW
+ 
+       Time Step    2800   July  8, 2022  14:13:09
+       Step Size:    0.997E-02 s, Total Time:      24.64 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.19E-01 on Mesh 1 at (20,20,2)
+       Maximum Pressure Error:  0.33E+03 on Mesh 1 at (19,22,26)
+       ---------------------------------------------------------------
+       Max CFL number:  0.91E+00 at (20,21,27)
+       Max divergence:  0.62E+01 at (22,24,3)
+       Min divergence: -0.26E+01 at (20,17,15)
+       Max VN number:   0.44E+00 at (40,38,32)
+       Total Heat Release Rate:            970.310 kW
+       Radiation Loss to Boundaries:      -393.065 kW
+ 
+       Time Step    2900   July  8, 2022  14:13:23
+       Step Size:    0.854E-02 s, Total Time:      25.63 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.34E-01 on Mesh 1 at (18,19,2)
+       Maximum Pressure Error:  0.42E+03 on Mesh 1 at (23,20,18)
+       ---------------------------------------------------------------
+       Max CFL number:  0.84E+00 at (19,21,27)
+       Max divergence:  0.62E+01 at (17,23,3)
+       Min divergence: -0.18E+01 at (21,20,21)
+       Max VN number:   0.45E+00 at (39,17,40)
+       Total Heat Release Rate:            982.240 kW
+       Radiation Loss to Boundaries:      -408.652 kW
+ 
+       Time Step    3000   July  8, 2022  14:13:35
+       Step Size:    0.996E-02 s, Total Time:      26.57 s
+       Pressure Iterations: 2
+       Maximum Velocity Error:  0.20E-01 on Mesh 1 at (21,16,2)
+       Maximum Pressure Error:  0.50E+03 on Mesh 1 at (22,22,27)
+       ---------------------------------------------------------------
+       Max CFL number:  0.96E+00 at (22,22,27)
+       Max divergence:  0.63E+01 at (20,16,3)
+       Min divergence: -0.22E+01 at (20,22,22)
+       Max VN number:   0.41E+00 at (36,39,40)
+       Total Heat Release Rate:           1060.686 kW
+       Radiation Loss to Boundaries:      -441.148 kW
+ 
+       Time Step    3100   July  8, 2022  14:13:47
+       Step Size:    0.984E-02 s, Total Time:      27.51 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.29E-01 on Mesh 1 at (16,21,2)
+       Maximum Pressure Error:  0.41E+03 on Mesh 1 at (23,18,21)
+       ---------------------------------------------------------------
+       Max CFL number:  0.86E+00 at (23,18,21)
+       Max divergence:  0.60E+01 at (19,16,3)
+       Min divergence: -0.23E+01 at (20,19,4)
+       Max VN number:   0.53E+00 at (36,1,27)
+       Total Heat Release Rate:            997.395 kW
+       Radiation Loss to Boundaries:      -437.813 kW
+ 
+       Time Step    3200   July  8, 2022  14:14:00
+       Step Size:    0.100E-01 s, Total Time:      28.52 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.27E-01 on Mesh 1 at (20,16,2)
+       Maximum Pressure Error:  0.36E+03 on Mesh 1 at (20,19,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.87E+00 at (20,18,27)
+       Max divergence:  0.58E+01 at (24,16,3)
+       Min divergence: -0.26E+01 at (18,18,3)
+       Max VN number:   0.43E+00 at (2,1,31)
+       Total Heat Release Rate:            991.620 kW
+       Radiation Loss to Boundaries:      -444.682 kW
+ 
+       Time Step    3300   July  8, 2022  14:14:12
+       Step Size:    0.950E-02 s, Total Time:      29.50 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.15E-01 on Mesh 1 at (24,22,2)
+       Maximum Pressure Error:  0.34E+03 on Mesh 1 at (27,17,40)
+       ---------------------------------------------------------------
+       Max CFL number:  0.93E+00 at (27,21,36)
+       Max divergence:  0.58E+01 at (17,22,3)
+       Min divergence: -0.27E+01 at (20,22,19)
+       Max VN number:   0.36E+00 at (6,39,40)
+       Total Heat Release Rate:            932.017 kW
+       Radiation Loss to Boundaries:      -451.207 kW
+ 
+       Time Step    3349   July  8, 2022  14:14:18
+       Step Size:    0.180E-02 s, Total Time:      30.00 s
+       Pressure Iterations: 1
+       Maximum Velocity Error:  0.90E-02 on Mesh 1 at (21,14,2)
+       Maximum Pressure Error:  0.17E+04 on Mesh 1 at (25,17,3)
+       ---------------------------------------------------------------
+       Max CFL number:  0.14E+00 at (22,20,23)
+       Max divergence:  0.53E+01 at (20,24,3)
+       Min divergence: -0.18E+01 at (20,21,17)
+       Max VN number:   0.68E-01 at (19,36,40)
+       Total Heat Release Rate:           1053.010 kW
+       Radiation Loss to Boundaries:      -481.967 kW
+ 
+
+
+ Time Stepping Wall Clock Time (s):      467.302
+ Total Elapsed Wall Clock Time (s):      469.212
+
+STOP: FDS completed successfully (CHID: hrrpua_1000)

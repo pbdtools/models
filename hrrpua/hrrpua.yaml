@@ -1,0 +1,5 @@
+models:
+  hrrpua_{{hrr}}:
+    matrix:
+      hrr: [500, 1000, 1500]
+      area: [1.5]
